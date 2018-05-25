@@ -14,24 +14,24 @@ var Counter = React.createClass({
     },
     
     componentWillUpdate: function() {
-    console.log('Before changing state');
+        console.log('Before changing state');
     },
     
     componentDidUpdate: function() {	
-    console.log('After changing state');
+        console.log('After changing state');
     },
     
     shouldComponentUpdate: function(nextProps, nextState) {	
-    console.log('Function return true or false, we have acces to two arguments. If function returns false, there would be no new changes and no rerendering');
-    return true;
+        console.log('Function return true or false, we have acces to two arguments. If function returns false, there would be no new changes and no rerendering');
+        return true;
     },
     
     componentWillReceiveProps: function() {	
-    console.log('Checking for new props, before reloading page and setting default props');
+        console.log('Checking for new props, before reloading page and setting default props');
     },
     
     componentWillUnMount: function() {	
-    console.log('We use when we get out of this component, we can use to make some action when user leaves Component');
+        console.log('We use when we get out of this component, we can use to make some action when user leaves Component');
     },
     
     increment: function() {
@@ -42,7 +42,7 @@ var Counter = React.createClass({
     
     decrement: function() {
         this.setState({
-        counter: this.state.counter - 1,
+            counter: this.state.counter - 1,
         });
     },
     
